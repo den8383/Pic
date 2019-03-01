@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="KotoQuiz:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/KotoQuiz_jar</output-path>
-    <root id="archive" name="KotoQuiz.jar">
-      <element id="module-output" name="KotoQuiz" />
-    </root>
-  </artifact>
-</component>
