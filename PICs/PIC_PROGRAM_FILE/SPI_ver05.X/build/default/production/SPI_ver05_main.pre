@@ -1,0 +1,42 @@
+
+# 1 "SPI_ver05_main.c"
+
+
+# 11 "SPI_ver05_slave.h"
+#pragma config FOSC = INTOSC
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config MCLRE = ON
+#pragma config CP = OFF
+#pragma config CPD = OFF
+#pragma config BOREN = ON
+#pragma config CLKOUTEN = OFF
+#pragma config IESO = OFF
+#pragma config FCMEN = OFF
+
+#pragma config WRT = OFF
+#pragma config PLLEN = ON
+#pragma config STVREN = OFF
+#pragma config LVP = OFF
+
+# 31
+unsigned char return_data = 0, read_data;
+
+
+
+
+void SlaveInit(void);
+void SlaveStart(void);
+
+# 5 "SPI_ver05_main.c"
+void interrupt OnInterSpi()
+{
+SlaveStart();
+}
+
+void main(void)
+{
+SlaveInit();
+
+while(1) ;
+}

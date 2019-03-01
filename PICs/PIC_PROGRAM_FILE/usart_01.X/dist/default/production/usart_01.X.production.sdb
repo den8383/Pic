@@ -1,0 +1,65 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"21 C:\Users\OWNER\Desktop\ÉçÉ{å§\programs\PICs\PIC_PROGRAM_FILE\usart_01.X\usart_02.c
+[v _rx_uart0 rx_uart0 `II(v  1 e 1 0 ]
+"29
+[v _main main `(i  1 e 2 0 ]
+"427 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"1150
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1704
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"3170
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3190
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3222
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3276
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3309
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3371
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"3433
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"7105
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7327
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7389
+[v _RCIE RCIE `VEb  1 e 0 @1165 ]
+"7391
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"7399
+[v _RXDTSEL RXDTSEL `VEb  1 e 0 @2287 ]
+"7653
+[v _TXCKSEL TXCKSEL `VEb  1 e 0 @2288 ]
+"7659
+[v _TXIF TXIF `VEb  1 e 0 @140 ]
+"19 C:\Users\OWNER\Desktop\ÉçÉ{å§\programs\PICs\PIC_PROGRAM_FILE\usart_01.X\usart_02.c
+[v _rx_data rx_data `uc  1 e 1 0 ]
+"20
+[v _rx_flg rx_flg `uc  1 e 1 0 ]
+"29
+[v _main main `(i  1 e 2 0 ]
+{
+"56
+} 0
+"21
+[v _rx_uart0 rx_uart0 `II(v  1 e 1 0 ]
+{
+"28
+} 0

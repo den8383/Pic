@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<project>                                  
+  <executable name="dist/default/production/MX32_USB_test01.X.production.elf">                 
+    <memory name="program">                 
+      <units>bytes</units>                 
+      <length>33936</length>                 
+      <used>2356</used>                     
+      <free>31580</free>                     
+    </memory>                              
+    <memory name="data">              
+      <units>bytes</units>                 
+      <length>8192</length>                 
+      <used>52</used>                     
+      <free>8140</free>                     
+    </memory>                              
+  </executable>                            
+</project>                                 

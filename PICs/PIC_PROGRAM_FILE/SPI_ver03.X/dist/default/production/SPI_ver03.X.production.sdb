@@ -1,0 +1,60 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"26 C:\Users\OWNER\Desktop\PIC_PROGRAM_FILE\SPI_ver03.X\SPI_ver03.c
+[v _OnInterSpi OnInterSpi `II(v  1 e 1 0 ]
+"39
+[v _main main `(v  1 e 1 0 ]
+"427 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1827.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"489
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"1150
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1212
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1704
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2859
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2911
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3584
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @529 ]
+"3698
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+"3820
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
+"7105
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"7327
+[v _PEIE PEIE `VEb  1 e 0 @94 ]
+"7409
+[v _SDO1SEL SDO1SEL `VEb  1 e 0 @2286 ]
+"7453
+[v _SSP1IE SSP1IE `VEb  1 e 0 @1163 ]
+"7455
+[v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
+"24 C:\Users\OWNER\Desktop\PIC_PROGRAM_FILE\SPI_ver03.X\SPI_ver03.c
+[v _return_data return_data `uc  1 e 1 0 ]
+[v _read_data read_data `uc  1 e 1 0 ]
+"39
+[v _main main `(v  1 e 1 0 ]
+{
+"62
+} 0
+"26
+[v _OnInterSpi OnInterSpi `II(v  1 e 1 0 ]
+{
+"37
+} 0

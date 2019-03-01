@@ -1,0 +1,53 @@
+
+# 1 "SPICom_ver01_main.c"
+
+
+# 11 "SPICom_ver01.h"
+#pragma config FOSC = INTOSC
+#pragma config WDTE = OFF
+#pragma config PWRTE = OFF
+#pragma config MCLRE = ON
+#pragma config CP = OFF
+#pragma config CPD = OFF
+#pragma config BOREN = ON
+#pragma config CLKOUTEN = OFF
+#pragma config IESO = OFF
+#pragma config FCMEN = OFF
+
+#pragma config WRT = OFF
+#pragma config PLLEN = ON
+#pragma config STVREN = OFF
+#pragma config LVP = OFF
+
+# 31
+unsigned char return_data = 0, read_data;
+
+
+
+
+void SlaveInit(void);
+void SlaveStart(void);
+int SlaveRec(void);
+void SlaveSen(int sendData);
+
+# 3 "SPICom_ver01_main.c"
+int sousinData = 0;
+int jusinData = 0;
+
+void interrupt OnInterSpi()
+{
+SlaveStart();
+jusinData = SlaveRec();
+sousinData = jusinData - 10;
+SlaveSen(sousinData);
+}
+
+void main(void)
+{
+SlaveInit();
+
+while(1)
+{
+
+};
+}

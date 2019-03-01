@@ -1,0 +1,109 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"37 commu_01.h
+[v _SlaveStart `(v ~T0 @X0 0 ef ]
+"38
+[v _SlaveRec `(i ~T0 @X0 0 ef ]
+"39
+[v _SlaveSen `(v ~T0 @X0 0 ef1`i ]
+[p mainexit ]
+"36
+[v _SlaveInit `(v ~T0 @X0 0 ef ]
+"11 commu_01.h
+[p x FOSC=INTOSC ]
+"12
+[p x WDTE=OFF ]
+"13
+[p x PWRTE=OFF ]
+"14
+[p x MCLRE=ON ]
+"15
+[p x CP=OFF ]
+"16
+[p x CPD=OFF ]
+"17
+[p x BOREN=ON ]
+"18
+[p x CLKOUTEN=OFF ]
+"19
+[p x IESO=OFF ]
+"20
+[p x FCMEN=OFF ]
+"22
+[p x WRT=OFF ]
+"23
+[p x PLLEN=ON ]
+"24
+[p x STVREN=OFF ]
+"25
+[p x LVP=OFF ]
+"31
+[v _return_data `uc ~T0 @X0 1 e ]
+[i _return_data
+-> -> 0 `i `uc
+]
+[v _read_data `uc ~T0 @X0 1 e ]
+[; ;commu_01.h: 31: unsigned char return_data = 0, read_data;
+[; ;commu_01.h: 36: void SlaveInit(void);
+[; ;commu_01.h: 37: void SlaveStart(void);
+[; ;commu_01.h: 38: int SlaveRec(void);
+[; ;commu_01.h: 39: void SlaveSen(int sendData);
+"3 commu_01_main.c
+[v _sousinData `i ~T0 @X0 1 e ]
+[i _sousinData
+-> 0 `i
+]
+[; ;commu_01_main.c: 3: int sousinData = 0;
+"4
+[v _jusinData `i ~T0 @X0 1 e ]
+[i _jusinData
+-> 0 `i
+]
+[; ;commu_01_main.c: 4: int jusinData = 0;
+[v $root$_OnInterSpi `(v ~T0 @X0 0 e ]
+[v F14 `(v ~T0 @X0 1 tf ]
+"6
+[v _OnInterSpi `IF14 ~T0 @X0 1 e ]
+"7
+{
+[; ;commu_01_main.c: 6: void interrupt OnInterSpi()
+[; ;commu_01_main.c: 7: {
+[e :U _OnInterSpi ]
+[f ]
+[; ;commu_01_main.c: 8: SlaveStart();
+"8
+[e ( _SlaveStart ..  ]
+[; ;commu_01_main.c: 9: jusinData = SlaveRec();
+"9
+[e = _jusinData ( _SlaveRec ..  ]
+[; ;commu_01_main.c: 10: sousinData = jusinData - 10;
+"10
+[e = _sousinData - _jusinData -> 10 `i ]
+[; ;commu_01_main.c: 11: SlaveSen(sousinData);
+"11
+[e ( _SlaveSen (1 _sousinData ]
+[; ;commu_01_main.c: 12: }
+"12
+[e :UE 1 ]
+}
+[v $root$_main `(v ~T0 @X0 0 e ]
+"14
+[v _main `(v ~T0 @X0 1 ef ]
+"15
+{
+[; ;commu_01_main.c: 14: void main(void)
+[; ;commu_01_main.c: 15: {
+[e :U _main ]
+[f ]
+[; ;commu_01_main.c: 16: SlaveInit();
+"16
+[e ( _SlaveInit ..  ]
+[; ;commu_01_main.c: 18: while(1) ;
+"18
+[e :U 4 ]
+[e :U 3 ]
+[e $U 4  ]
+[e :U 5 ]
+[; ;commu_01_main.c: 19: }
+"19
+[e :UE 2 ]
+}

@@ -1,0 +1,63 @@
+Version 3.2 HI-TECH Software Intermediate Code
+[p mainexit ]
+"37 SPI_ver04_slave.h
+[v _SlaveInit `(v ~T0 @X0 0 ef ]
+"11 SPI_ver04_slave.h
+[p x FOSC=INTOSC ]
+"12
+[p x WDTE=OFF ]
+"13
+[p x PWRTE=OFF ]
+"14
+[p x MCLRE=ON ]
+"15
+[p x CP=OFF ]
+"16
+[p x CPD=OFF ]
+"17
+[p x BOREN=ON ]
+"18
+[p x CLKOUTEN=OFF ]
+"19
+[p x IESO=OFF ]
+"20
+[p x FCMEN=OFF ]
+"22
+[p x WRT=OFF ]
+"23
+[p x PLLEN=ON ]
+"24
+[p x STVREN=OFF ]
+"25
+[p x LVP=OFF ]
+"31
+[v _return_data `uc ~T0 @X0 1 e ]
+[i _return_data
+-> -> 0 `i `uc
+]
+[v _read_data `uc ~T0 @X0 1 e ]
+[; ;SPI_ver04_slave.h: 31: unsigned char return_data = 0, read_data;
+[; ;SPI_ver04_slave.h: 34: void interrupt OnInterSpi(void);
+[; ;SPI_ver04_slave.h: 37: void SlaveInit(void);
+[v $root$_main `(v ~T0 @X0 0 e ]
+"6 SPI_ver04_main.c
+[v _main `(v ~T0 @X0 1 ef ]
+"7
+{
+[; ;SPI_ver04_main.c: 6: void main(void)
+[; ;SPI_ver04_main.c: 7: {
+[e :U _main ]
+[f ]
+[; ;SPI_ver04_main.c: 8: SlaveInit();
+"8
+[e ( _SlaveInit ..  ]
+[; ;SPI_ver04_main.c: 10: while(1) ;
+"10
+[e :U 3 ]
+[e :U 2 ]
+[e $U 3  ]
+[e :U 4 ]
+[; ;SPI_ver04_main.c: 11: }
+"11
+[e :UE 1 ]
+}

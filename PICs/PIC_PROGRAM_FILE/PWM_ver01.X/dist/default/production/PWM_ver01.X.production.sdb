@@ -1,0 +1,59 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1827 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"6 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+[v _eecpymem eecpymem `(v  1 e 1 0 ]
+"39
+[v _memcpyee memcpyee `(v  1 e 1 0 ]
+"41 C:\Users\OWNER\Desktop\PIC_PROGRAM_FILE\PWM_ver01.X\PWM_ver01.c
+[v _main main `(i  1 e 2 0 ]
+"66
+[v _InitDevice InitDevice `(uc  1 e 1 0 ]
+"95
+[v _ChangeRightMotorSpeed ChangeRightMotorSpeed `(uc  1 e 1 0 ]
+"959 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f1827.h
+[v _PR2 PR2 `VEuc  1 e 1 @27 ]
+"979
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1150
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1212
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1704
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2859
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2911
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"5394
+[v _CCPTMRS CCPTMRS `VEuc  1 e 1 @670 ]
+"5575
+[v _CCPR3L CCPR3L `VEuc  1 e 1 @785 ]
+"5615
+[v _CCP3CON CCP3CON `VEuc  1 e 1 @787 ]
+"5726
+[v _CCP4CON CCP4CON `VEuc  1 e 1 @794 ]
+"34 C:\Users\OWNER\Desktop\PIC_PROGRAM_FILE\PWM_ver01.X\PWM_ver01.c
+[v _PWM PWM `uc  1 e 1 0 ]
+"41
+[v _main main `(i  1 e 2 0 ]
+{
+"62
+} 0
+"66
+[v _InitDevice InitDevice `(uc  1 e 1 0 ]
+{
+"91
+} 0
+"95
+[v _ChangeRightMotorSpeed ChangeRightMotorSpeed `(uc  1 e 1 0 ]
+{
+[v ChangeRightMotorSpeed@pwm pwm `i  1 p 2 0 ]
+"99
+} 0
