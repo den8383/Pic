@@ -1,0 +1,120 @@
+#include "Arduino.h"
+#include "Omni.h"
+
+Omni::Omni(int pin1A, int pin1B,int pin2A, int pin2B,int pin3A, int pin3B,int pin4A, int pin4B, int mode)
+{
+  m_pin1A=pin1A;
+  m_pin1B=pin1B;
+  m_pin2A=pin2A;
+  m_pin2B=pin2B;
+  m_pin3A=pin3A;
+  m_pin3B=pin3B;
+  m_pin4A=pin4A;
+  m_pin4B=pin4B;
+  m_mode=mode;
+  motor1 = new Motor(m_pin1A,m_pin1B,m_mode);
+  motor2 = new Motor(m_pin2A,m_pin2B,m_mode);
+  motor3 = new Motor(m_pin3A,m_pin3B,m_mode);
+  motor4 = new Motor(m_pin4A,m_pin4B,m_mode);
+}
+
+void Omni::Front(){
+  motor1->onF();
+  motor2->onF();
+  motor3->onR();
+  motor4->onR();
+}
+
+void Omni::FRight(){
+  motor1->off();
+  motor2->onF();
+  motor3->off();
+  motor4->onR();
+  
+}
+void Omni::Right(){
+  motor1->onR();
+  motor2->onF();
+  motor3->onF();
+  motor4->onR();
+  
+}
+void Omni::BRight(){
+  motor1->onR();
+  motor2->off();
+  motor3->onF();
+  motor4->off();
+  
+}
+void Omni::Back(){
+  motor1->onR();
+  motor2->onR();
+  motor3->onF();
+  motor4->onF();
+  
+}
+void Omni::BLeft(){
+  motor1->off();
+  motor2->onR();
+  motor3->off();
+  motor4->onF();
+  
+}
+void Omni::Left(){
+  motor1->onF();
+  motor2->onR();
+  motor3->onR();
+  motor4->onF();
+  
+}
+void Omni::FLeft(){
+  motor1->onF();
+  motor2->off();
+  motor3->onR();
+  motor4->off();
+  
+}
+
+void Omni::TurnR(){
+  motor1->onR();
+  motor2->onR();
+  motor3->onR();
+  motor4->onR();
+}
+void Omni::TurnL(){
+  motor1->onF();
+  motor2->onF();
+  motor3->onF();
+  motor4->onF();
+  
+}
+void Omni::DriftR(){
+  motor1->onF();
+  motor2->onF();
+  motor3->onF();
+  motor4->onR();
+  
+}
+void Omni::DriftL(){
+  motor1->onF();
+  motor2->onR();
+  motor3->onR();
+  motor4->onR();
+  
+}
+
+void Omni::Stop(){
+  motor1->off();
+  motor2->off();
+  motor3->off();
+  motor4->off();
+  
+}
+
+void Omni::Print(){
+  motor1->print();
+  motor2->print();
+  motor3->print();
+  motor4->print();
+}
+
